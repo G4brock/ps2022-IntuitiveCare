@@ -31,6 +31,7 @@ def filter(html, urls=[]):
 
 
 def main():
+    os.makedirs('./anexos')
     html = urlopen("https://www.gov.br/ans/pt-br/assuntos/consumidor/o-que-o-seu-plano-de-saude-deve-cobrir-1/o-que-e-o-rol-de-procedimentos-e-evento-em-saude")
     links = filter(html)
     for data in links:
